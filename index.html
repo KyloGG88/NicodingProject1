@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Movie Tracker</title>
+
+</head>
+
+<body style="background-image: url('background.png');">
+    <header id="header" class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <!-- Search Inputs Column -->
+            <div class="col-12 col-md-3 mb-2 mb-md-0 order-1 order-md-1">
+                <form id="form1" class="mb-4 ps-3">
+                    <input type="text" placeholder="Search by movie..." id="search-form-one" class="form-control">
+                </form>
+                <form id="form2" class="ps-3">
+                    <input type="text" placeholder="Search by actor..." id="search-form-two" class="form-control">
+                </form>
+            </div>
+    
+            <!-- Logo Column -->
+            <div class="col-12 col-md-6 text-center order-2 order-md-2">
+                <div id="logo-container">
+                    <a href = "#" class = "logo-button">
+                    <img src="logo.png" alt="Movie Tracker Logo" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Watchlist Button Column -->
+            <div class="col-12 col-md-3 text-center text-md-end order-3 order-md-3">
+                <div id="button-container" class="text-right pe-4 mt-3 mt-md-0">
+                    <a href="#" class="btn btn-primary">
+                        <span><b>Watchlist</b></span>
+                        <span class="badge"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <!-- <div>
+            <a href="#" onclick="sortByRating()"><span class="rating">Sort By Rating &#9734;</span>
+        </div> -->
+    
+    <div class="centered-container">
+        <h1>Currently Trending</h1>
+    </div>
+
+    <!-- star unicode: &#10025; plus &#10133; circled x &#11199;-->
+    <main id="main">
+        <!-- <div class="movie">
+            <div class="watchlist">
+                <span> Add to watchlist: </span>
+                <!-- unicode for eye icon 
+                <span class="eye-icon">&#128065;</span> 
+            </div>
+            <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="RandomImage"> -->
+            <div class="movie-info" movie-id="${title}">
+                <h3>MovieTitle</h3>
+                <span class="star" id="movie-rating">&#10031  &#10032</span>
+
+            </div>
+        <!-- <-- 
+            <div class="actor-info" id="actor-info">
+                <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="RandomImage">
+                <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="RandomImage">
+                <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="RandomImage">
+                <h5>ActorsName1</h5>
+                <h5>ActorsName2</h5>
+                <h5>ActorsName3</h5>
+            </div>
+            <div class="movie-overview">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eos minus perferendis similique a
+                ducimus nisi odio aspernatur. Saepe, nisi voluptatum. Aliquam beatae rerum minus dignissimos accusantium
+                ullam molestiae adipisci?
+            </div>
+        </div>
+        <div class="movie">
+            <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="RandomImage">
+            <div class="movie-info">
+                <h3>MovieTitle</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="movie-overview">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eos minus perferendis similique a
+                ducimus nisi odio aspernatur. Saepe, nisi voluptatum. Aliquam beatae rerum minus dignissimos accusantium
+                ullam molestiae adipisci?
+            </div>
+        </div>
+        <div class="movie">
+            <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="RandomImage">
+            <div class="movie-info">
+                <h3>MovieTitle</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="movie-overview">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eos minus perferendis similique a
+                ducimus nisi odio aspernatur. Saepe, nisi voluptatum. Aliquam beatae rerum minus dignissimos accusantium
+                ullam molestiae adipisci?
+            </div> 
+        </div> 
+        <div class="actor">
+            <h3>ActorName</h3>
+            <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="ActorImage">
+
+            <div class="actor-overview">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eos minus perferendis similique
+                    a
+                    ducimus nisi odio aspernatur. Saepe, nisi voluptatum. Aliquam beatae rerum minus dignissimos
+                    accusantium
+                    ullam molestiae adipisci?</p>
+                <div class="actor-info-one" id="actor-info">
+                    <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="RandomImage">
+                    <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="RandomImage">
+                    <img src="https://plus.unsplash.com/premium_photo-1686514714138-51925a219605?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="RandomImage">
+                    <h5>Movie1</h5>
+                    <h5>Movie2</h5>
+                    <h5>Movie3</h5>
+                </div>
+            </div>   -->
+        
+        </div>
+
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="content">
+                  <span class="x-icon">&#10006;</span>
+                    <div class="content">
+                        <div class="left">
+                    <div class="poster-img">
+                        <img src="https://unsplash.it/500/1000" alt="">
+                    </div>
+                    <div class="single-info">
+                        <span>Add to favorites:</span>
+                        <span class="heart-icon">&#9829;</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>Movie Title</h1>
+                    <h3>Movie Tagline</h3>
+                    <div class="single-info-container">
+                        <div class="single-info">
+                            <span>Language:</span>
+                            <span>English</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Length:</span>
+                            <span>120 minutes</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Rate:</span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Budget:</span>
+                            <span>1350000$</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date:</span>
+                            <span>05-07-2022</span>
+                        </div>
+                    </div>
+                    <div class="genres">
+                        <h2>Genres</h2>
+                        <ul>
+                            <li>Action</li>
+                            <li>Drama</li>
+                            <li>Romance</li>
+                        </ul>
+                    </div>
+                    <div class="overview">
+                        <h2>Overview</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus, quos molestiae fuga voluptatem totam odit voluptates ullam et distinctio?</p>
+                    </div>
+                    <div class="trailer">
+                        <h2>Trailer</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kmo8NLKkfcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="popup-container hide-popup">
+             -->
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
