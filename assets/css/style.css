@@ -175,7 +175,7 @@ main {
     color: red;
 }
 
-/* Add to Watchlist */
+/* Add to Watchlist on Movie Card*/
 .watchlist {
     color: #d3d3d3;
     font-size: 20px;
@@ -222,6 +222,11 @@ main {
     width: 350px;
     height: 350px;
     position: relative;
+}
+
+.movie-overview {
+    color: var(--primary-color);
+    padding: 10px;
 }
 
 /* Modal/ Actor Styles */
