@@ -26,6 +26,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Resources](#resoures)
 - [License](#license)
 
 ## Installation
@@ -52,12 +53,6 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Badges
@@ -78,7 +73,7 @@ If you created an application or package and would like other developers to cont
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
-# Resources
+## Resources
 
 ***Bootstrap 4***
 *     https://getbootstrap.com/docs/4.3/getting-started/introduction/
@@ -97,6 +92,6 @@ Go the extra mile and write tests for your application. Then provide examples on
 *     https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 *     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-# License
+## License
 
 Public - MIT License
