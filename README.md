@@ -77,3 +77,20 @@ If you created an application or package and would like other developers to cont
 ## Tests
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+
+# Resources
+
+***Bootstrap 4***
+*     https://getbootstrap.com/docs/4.3/getting-started/introduction/
+***TMDB API***
+*     https://developer.themoviedb.org/docs/getting-started
+***YouTube API***
+*     https://developers.google.com/youtube/v3
+***Javascript***
+*     https://developer.mozilla.org/en-US/docs/Web/javascript
+***jQuery***
+*     https://api.jquery.com/jQuery.get/
+
+# License
+
+Public - MIT License
