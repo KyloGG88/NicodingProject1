@@ -82,6 +82,7 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 ***Bootstrap 4***
 *     https://getbootstrap.com/docs/4.3/getting-started/introduction/
+*     https://getbootstrap.com/docs/4.3/components/modal/
 ***TMDB API***
 *     https://developer.themoviedb.org/docs/getting-started
 ***YouTube API***
@@ -90,6 +91,11 @@ Go the extra mile and write tests for your application. Then provide examples on
 *     https://developer.mozilla.org/en-US/docs/Web/javascript
 ***jQuery***
 *     https://api.jquery.com/jQuery.get/
+***CSS***
+*     https://web.dev/learn/css/
+*     https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+*     https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+*     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 # License
 
