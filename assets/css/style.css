@@ -365,6 +365,7 @@ main {
 
 .movie-info span.star {
     color: black;
+    border: none;
 }
 
 .movie-info span.orange {
