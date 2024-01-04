@@ -323,8 +323,6 @@ main {
     }
 }
 
-
-@media (max-width: 1200px) {
     .actor {
         flex-direction: column;
         align-items: center;
@@ -362,7 +360,6 @@ main {
     .actor-info-one {
         justify-content: center;
     }
-}
 
 @media (max-width: 768px) {
     .actor {
