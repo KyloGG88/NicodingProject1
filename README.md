@@ -3,6 +3,9 @@ Group 6 - Nicoding - Project 1
 
 # User Walkthrough Video
 
+[video.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/ac755512-3223-4fff-a2e2-5eb33065283a)
+
+
 ![alt text](assets/video.webm)
 
 # Film Suggestion Website
