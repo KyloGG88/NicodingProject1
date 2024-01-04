@@ -324,7 +324,7 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .actor {
         flex-direction: column;
         align-items: center;
