@@ -346,6 +346,7 @@ main {
         margin: 0 auto;
         border-radius: 10%;
         background-color: #fefefe;
+        border: 6px solid red;
     }
 
 
