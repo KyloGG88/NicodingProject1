@@ -172,6 +172,53 @@ main {
     margin-bottom: 20px;
 } */
 
+
+@media (max-width: 768px) {
+    .actor {
+        flex-direction: column;
+        align-items: center;
+        font-weight: 500;
+        font-size: large;
+    }
+
+
+
+
+
+
+    .actor img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 15%;
+        border: 3px solid #ffffff;
+        padding: 2px;  
+    }
+
+
+    .actor-info-one img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10%;
+        background-color: #fefefe;
+    }
+
+
+    .actor-info-one h5, h3 {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+
+    .actor-info-one {
+        justify-content: center;
+    }
+}
+
+
 .actor {
     width: 80%;
     margin: 1rem;
@@ -186,7 +233,31 @@ main {
 
 
 
+
+
+
 }
+
+
+.actor {
+    width: 80%;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* height: 950px; */
+    height: 100%;
+
+
+
+
+
+
+}
+
 
 .actor img {
     width: 300px;
@@ -196,20 +267,22 @@ main {
 
 
 
+
+
+
 }
+
 
 .actor-overview p {
     width: 100%;
     margin-top: 50px;
 }
 
+
 .actor h3 {
     margin-top: 10px;
     margin-left: 10px;
-    color: white;
 }
-
-
 
 /* For the watchlist on the cards */
 .watchlist {
