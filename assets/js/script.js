@@ -23,7 +23,6 @@ const photos_URL = 'https://image.tmdb.org/t/p/original/';
 const SearchURL = _URL + '/search/movie?' + TMDB_KEY;
 
 
-// const ActorURL = _URL + '/search/movie?';
 //Initalise array for main actors from movie search
 let actorDetails = [];
 
@@ -36,8 +35,6 @@ let actorDetails = [];
 const main = document.getElementById('main');
 const header = document.getElementById('header');
 const rating = document.getElementById('movie-rating');
-// For the search bar
-//const form = document.getElementById('form');
 const search = document.getElementById('search-form-one');
 const search1 = document.getElementById('search-form-two');
 const button = document.getElementById('button-container');
@@ -46,16 +43,20 @@ const header2 = document.getElementById('header2');
 
 
 
-
+hideHeader()
 // Get popular movies from API
 getMovies(POP_API)
 get_watchlist_count()
+
+window.onload = function() {
+    header1.style.display = 'block';
+    header2.style.display = 'none';
+};
 
 
 
 
 function getMovies(url) {
-    hideHeader()
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -143,14 +144,14 @@ async function getMovieByID(movie_id) {
 
 // This function shows the results for when the movie title search bar is used
 function showMovies(data) {
-    
+
     //set inner HTML as an empty string- gives blank state
     main.innerHTML = '';
     data.forEach(movie => {
         const { title, poster_path, vote_average, overview, id } = movie;
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
-        
+
         //Getting main actors from movie
         getMovieActors(id).then(actors => {
             // call
@@ -209,7 +210,7 @@ function showMovies(data) {
             //   return ` <img src="${photos_URL} ${actor.profilePath}"
             //   alt="${actor.name}">`
             //  })}
-           
+
 
 
             const eye_icon = movieEl.querySelector('.eye-icon')
@@ -231,7 +232,7 @@ function showMovies(data) {
             })
             main.appendChild(movieEl);
             get_video(title, id)
-            
+
 
 
 
@@ -241,7 +242,7 @@ function showMovies(data) {
 
 
         });
-       
+
 
 
 
@@ -251,15 +252,15 @@ function showMovies(data) {
 
 function get_video(searchTerm, id) {
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchTerm}&key=AIzaSyB2PqxIj9o2ICkmTS-M5wDEoy7noA6V2wE`;
-   
+
     fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            $(` iframe[data-movie-id="${id}"]`).attr('src',`https://www.youtube.com/embed/${data.items[0].id.videoId}`);
-           // document.querySelector(".youtubeVideo").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
+            $(` iframe[data-movie-id="${id}"]`).attr('src', `https://www.youtube.com/embed/${data.items[0].id.videoId}`);
+            // document.querySelector(".youtubeVideo").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
         });
-    $(` iframe[data-movie-id="${id}"]`).attr('src',`https://www.youtube.com/embed/$/x9TQ6culXIA`);
+    $(` iframe[data-movie-id="${id}"]`).attr('src', `https://www.youtube.com/embed/$/x9TQ6culXIA`);
 
 }
 
@@ -357,7 +358,7 @@ function show_watchlist_count(length) {
 function get_color(vote) {
     if (Math.round(vote / 2) >= 4) {
         return "green";
-    } else if (Math.round(vote /2) >= 2) {
+    } else if (Math.round(vote / 2) >= 2) {
         return "orange";
     } else {
         return "red";
@@ -395,7 +396,7 @@ function showActors(data) {
         const { original_name, profile_path, id, known_for } = actor;
         const movieEl = document.createElement('div');
         movieEl.classList.add('actor');
-        console.log(known_for)
+        //console.log(known_for)
 
 
         //Getting actors info
@@ -445,9 +446,10 @@ function showActors(data) {
 
 
 
-// Listen to the event when the Movie form is submitted
+// Listen to the event when the Movie is searched for
 document.getElementById('search-form-one').form.addEventListener('submit', (e) => {
     e.preventDefault();
+    hideHeader()
     const searchTerm = search.value;
     // If search has been executed by user
     if (searchTerm) {
@@ -470,6 +472,7 @@ document.getElementById('search-form-one').form.addEventListener('submit', (e) =
 // Listen to the event when the Actor form is submitted
 document.getElementById('search-form-two').form.addEventListener('submit', (event) => {
     event.preventDefault();
+    hideHeader()
     const searchTerm = search1.value;
     // If actor search has been executed by user
     if (searchTerm) {
@@ -489,63 +492,62 @@ document.getElementById('search-form-two').form.addEventListener('submit', (even
 
 // fetch_watchList()
 document.getElementById('button-container').addEventListener('click', (e) => {
-    
+    header2.style.display = 'block';
+    header1.style.display = 'none';
+  
+
     e.preventDefault();
     //fetch ls
     if (e) {
-        if (header1.style.display === 'none') {
-            header1.style.display = 'block'; // Show header1
-            header2.style.display = 'none';   // Hide header2
-          } else {
-            header1.style.display = 'none';   // Hide header1
-            header2.style.display = 'block';  // Show header2
-          }
-
         fetch_watchList();
-        // $('.modal-body .overview').removeClass('d-none')
+        
     }
     else {
         getMovies(POP_API)
 
-
     }
 });
 
- 
 
- 
- 
+
+
+
 // go back to homepage
 
 
 
 
-document.getElementById('logo-container').addEventListener('click',(e) => {
+document.getElementById('logo-container').addEventListener('click', (e) => {
     e.preventDefault();
-    if (e){
+    if (e) {
         getMovies(POP_API)
+        header2.style.display = 'none';
+        header1.style.display = 'block';
     }
 });
 
-$(document).on('click','.imageclick',function(e) {
+$(document).on('click', '.imageclick', function (e) {
     e.preventDefault();
-    if (e){
+    if (e) {
         const movieID = $(this).attr('movie-id')
-        console.log(movieID)
+        //console.log(movieID)
         $('.modal-body').empty();
-        $('.overview[movie-id="'+ movieID+'"]').clone().appendTo('.modal-body');
+        $('.overview[movie-id="' + movieID + '"]').clone().appendTo('.modal-body');
         $('.modal-body .overview').removeClass('d-none')
-        $('#myModal').modal(); 
-       
+        $('#myModal').modal();
+
     }
 });
 
-document.querySelector('.btn-close').addEventListener('click', function(){
+document.querySelector('.btn-close').addEventListener('click', function () {
     $('#myModal').modal('hide');
-    
-   
-  });
+
+
+});
 
 function hideHeader() {
     header2.style.display = 'none';
-  }
+    header1.style.display = 'none';
+    
+
+}

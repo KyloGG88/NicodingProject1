@@ -151,13 +151,6 @@ header {
     color: #c59473;
 }
 
-/* to show search bars underneath each other
-.search-container {
-    /*display: grid;
-    grid-template-rows: auto auto;
-    gap: 10px;
-} */
-
 
 main {
     display: flex;
