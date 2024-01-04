@@ -310,18 +310,18 @@ function add_watchlist_to_DOM_from_local_storage(movie) {
     main.innerHTML += `
     
    
-    <div class="movie">
+    <div class="movie-watchlist">
    
                  <img src="${photos_URL + movie.poster_path}" alt="${movie.title}">
-                <div class="movie-info" movie-id="${movie.id}">
-                    <h3 movie-title="${movie.title}">${movie.title}</h3>
-                    <span class="star" id="movie-rating">${displayRating(movie.vote_average)}</span>
+                <div class="movie-info-watchlist" movie-id="${movie.id}">
+                    <div class="title-watchlist"><h3 movie-title="${movie.title}">${movie.title}</h3></div>
+                    <div class="watchlist-star"><span class="star" id="movie-rating">${displayRating(movie.vote_average)}</span>
                 </div>
-                <div class="movie-overview">
+                <div class="movie-overview-watchlist">
                          "${movie.overview}"
                 </div>
             </div>
-            </div>
+        
    
     `
     // main.appendChild(movieEl);
