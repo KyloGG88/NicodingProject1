@@ -1,6 +1,6 @@
 // TMDB API KEY: f6c495e780e710485a2ba600a095a7eb
 // YouTube V3 API key=AIzaSyB2PqxIj9o2ICkmTS-M5wDEoy7noA6V2wE
-//AIzaSyB2PqxIj9o2ICkmTS-M5wDEoy7noA6V2wE
+
 
 
 
@@ -41,7 +41,8 @@ const rating = document.getElementById('movie-rating');
 const search = document.getElementById('search-form-one');
 const search1 = document.getElementById('search-form-two');
 const button = document.getElementById('button-container');
-// initialise objects title, poster_path, vote_average, overview, id
+const header1 = document.getElementById('header1');
+const header2 = document.getElementById('header2');
 
 
 
@@ -54,6 +55,7 @@ get_watchlist_count()
 
 
 function getMovies(url) {
+    hideHeader()
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -69,7 +71,7 @@ function getMovies(url) {
 
 
 }
-//DONE
+
 function getMovieActors(id) {
     // URL movie title search getting actors
     return fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=f6c495e780e710485a2ba600a095a7eb`)
@@ -141,47 +143,46 @@ async function getMovieByID(movie_id) {
 
 // This function shows the results for when the movie title search bar is used
 function showMovies(data) {
+    
     //set inner HTML as an empty string- gives blank state
     main.innerHTML = '';
     data.forEach(movie => {
         const { title, poster_path, vote_average, overview, id } = movie;
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
+        
         //Getting main actors from movie
         getMovieActors(id).then(actors => {
             // call
             movieEl.innerHTML = `
 
                 <h3 movie-title="${title}">${title}</h3>
-                <img src="${photos_URL + poster_path}" alt="${title}">
+                <img class='imageclick' movie-id="${id}" src="${photos_URL + poster_path}" alt="${title}">
                 <div class="movie-info" movie-id="${id}">
-                    <span>${displayRating(vote_average)}</span>
+                <span>${displayRating(vote_average)}</span>
                 </div>
-                <div class="below-image">
-                    <div class="watchlist">
-                        <span> Add to watchlist: </span>
-                            <!-- unicode for eye icon -->
-                            <span class="eye-icon">&#128065;</span>
-                    </div>
-                    <div class="more-info">
-                        <button>more info</button>
-                    </div>
+
+ 
+                <div class="watchlist">
+                    <span> Add to watchlist: </span>
+                    <!-- unicode for eye icon -->
+                    <span class="eye-icon">&#128065;</span>
                 </div>
-                                
+
                 
-                <!--
                 <div class="trailer">
                 <h2>Trailer</h2>
-                <iframe width="560" height="315" data-movie-id="${id}" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="300" height="300" data-movie-id="${id}" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                -->
+                
+
+
+               
 
 
 
-
-
-                <!--
-                <div class="movie-overview">
+               <div class = 'overview d-none' movie-id="${id}">
+                <div class="movie-overview" >
                          "${overview}"
                 </div>
                 <div class = "actor-info" id = "actor-info">
@@ -194,7 +195,9 @@ function showMovies(data) {
                 <h5>${actors[0].name}</h5>
                 <h5>${actors[1] ? actors[1].name : 'N/A'}</h5>
                 <h5>${actors[2].name}</h5>
-                -->
+                </div>
+                </div>
+                
 
             </div>
    
@@ -228,6 +231,7 @@ function showMovies(data) {
             })
             main.appendChild(movieEl);
             get_video(title, id)
+            
 
 
 
@@ -245,92 +249,19 @@ function showMovies(data) {
     });
 }
 
-const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${getSearchTerm()}&key=${YOUTUBE_API_KEY}`;
-// console.log(url);
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    //console.log(data.items[0].id.videoId);
-    document.querySelector(".youtubeVideo").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
-});
 function get_video(searchTerm, id) {
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchTerm}&key=AIzaSyB2PqxIj9o2ICkmTS-M5wDEoy7noA6V2wE`;
-    // console.log(url);
+   
     fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data)
             $(` iframe[data-movie-id="${id}"]`).attr('src',`https://www.youtube.com/embed/${data.items[0].id.videoId}`);
-           document.querySelector(".youtubeVideo").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
+           // document.querySelector(".youtubeVideo").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
         });
-
+    $(` iframe[data-movie-id="${id}"]`).attr('src',`https://www.youtube.com/embed/$/x9TQ6culXIA`);
 
 }
-
-const myModal = document.getElementById('modal')
-const myInput = document.getElementById('modal-content')
-
-async function show_popup(movie) {
-    console.log('movie data here');
-    popup_container.classList.add('show-popup')
-
-    // const movie_id = card.getAttribute('data-id')
-    // const movie = await get_movie_by_id(movie_id)
-    // const movie_trailer = await get_movie_trailer(movie_id)
-
-    popup_container.style.background = `linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 1)), url(${image_path + movie.poster_path})`
-
-    popup_container.innerHTML = `
-            <span class="x-icon">&#10006;</span>
-            <div class="content">
-                <div class="left">
-                    <div class="poster-img">
-                        <img src="${image_path + movie.poster_path}" alt="">
-                    </div>
-                    <div class="single-info">
-                        <span>Add to favorites:</span>
-                        <span class="heart-icon">&#9829;</span>
-                    </div>
-                </div>
-                <div class="right">
-                    <h1>${movie.title}</h1>
-                    <h3>${movie.tagline}</h3>
-                    <div class="single-info-container">
-                        <div class="single-info">
-                            <span>Language:</span>
-                            <span>${movie.spoken_languages[0].name}</span>
-                        </div>
-                        <div class="single-info">
-                            <span>Length:</span>
-                            <span>${movie.runtime} minutes</span>
-                        </div>
-                        <div class="single-info">
-                            <span>Rate:</span>
-                            <span>${movie.vote_average} / 10</span>
-                        </div>
-                        <div class="single-info">
-                            <span>Budget:</span>
-                            <span>$ ${movie.budget}</span>
-                        </div>
-                        <div class="single-info">
-                            <span>Release Date:</span>
-                            <span>${movie.release_date}</span>
-                        </div>
-                    </div>
-                    <div class="overview">
-                        <h2>Overview</h2>
-                        <p>${movie.overview}</p>
-                    </div>
-                    <div class="trailer">
-                        <h2>Trailer</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/${movie_trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-    `
-    
-}
-
 
 
 // local storage
@@ -376,6 +307,7 @@ function add_watchlist_to_DOM_from_local_storage(movie) {
     // const movieEl = document.createElement('div');
     // movieEl.classList.add('movie');
     main.innerHTML += `
+    
    
     <div class="movie">
    
@@ -557,10 +489,20 @@ document.getElementById('search-form-two').form.addEventListener('submit', (even
 
 // fetch_watchList()
 document.getElementById('button-container').addEventListener('click', (e) => {
+    
     e.preventDefault();
     //fetch ls
     if (e) {
+        if (header1.style.display === 'none') {
+            header1.style.display = 'block'; // Show header1
+            header2.style.display = 'none';   // Hide header2
+          } else {
+            header1.style.display = 'none';   // Hide header1
+            header2.style.display = 'block';  // Show header2
+          }
+
         fetch_watchList();
+        // $('.modal-body .overview').removeClass('d-none')
     }
     else {
         getMovies(POP_API)
@@ -569,7 +511,10 @@ document.getElementById('button-container').addEventListener('click', (e) => {
     }
 });
 
+ 
 
+ 
+ 
 // go back to homepage
 
 
@@ -582,13 +527,25 @@ document.getElementById('logo-container').addEventListener('click',(e) => {
     }
 });
 
+$(document).on('click','.imageclick',function(e) {
+    e.preventDefault();
+    if (e){
+        const movieID = $(this).attr('movie-id')
+        console.log(movieID)
+        $('.modal-body').empty();
+        $('.overview[movie-id="'+ movieID+'"]').clone().appendTo('.modal-body');
+        $('.modal-body .overview').removeClass('d-none')
+        $('#myModal').modal(); 
+       
+    }
+});
 
+document.querySelector('.btn-close').addEventListener('click', function(){
+    $('#myModal').modal('hide');
+    
+   
+  });
 
-
-
-
-                //  <img src="${photos_URL + poster_path}" alt="${title}">
-                // <div class="movie-info" movie-id="${id}">
-                //     <h3 movie-title="${title}">${title}</h3>
-                //     <span>${displayRating(vote_average)}</span>
-                // </div>
+function hideHeader() {
+    header2.style.display = 'none';
+  }
