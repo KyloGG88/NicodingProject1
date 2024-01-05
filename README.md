@@ -1,21 +1,36 @@
 # NicodingProject1
 Group 6 - Nicoding - Project 1
-The link to the deployed application is here: https://kylogg88.github.io/NicodingProject1/
+
+## Table of Contents
+
+- [Description](#description)
+- [Motivation](#motivation)
+- [User Story](#userstory)
+- [Learning Journey](#learning)
+- [Usage](#usage)
+- [Features](#features)
+- [Testing](#testing)
+- [Future Development](#future)
+- [Resources](#resoures)
+- [Links](#links)
+- [Credits](#credits)
+- [License](#license)
 
 ## Description
+Movie Tracker is a comprehensive and user-friendly movie searching website that caters to both casual moviegoers and avid cinephiles.
 
-![](assets/images/Mockup.jpg) ADD A DIFFERENT IMAGE
+***Key Features:***
+* Movie Search: search for movies by title,modal popup when movie poster is clicked, trailer embedded in modal
+* Actor Search: actor's profile: a short overview, theirpicture and 3 highest rated movies
+* Watchlist Feature: users to create and manage a personalized watchlist
+* User-Friendly Interface: clean and intuitive design,responsive search bar and easy to find watchlist button
 
-MovieTracker is an app that allows users to organise their movie watching.  ADD MORE TO THIS? 
-
-MOTIVATION: 
+## Motivation 
 The motivation for our project was a combination of passion and real-world problem. 
 
-Passion: We love watching movies.
-
-​Problem: We struggled to organise our movie watching. 
-
-We wanted to create an app that would make movie nights easy peasy and answer the age-old question "What have I seen that actor in before?"
+* Passion: We love watching movies.
+* ​Problem: We struggled to organise our movie watching. 
+* We wanted to create an app that would make movie nights easy peasy and answer the age-old question "What have I seen that actor in before?"
 
 We created this app so that movie lovers could check out which films are trending at the moment, search for movies by title, add movies to a watchlist, see how many stars it has, read the movie summary, watch the trailer, check out who the main actors are, and find out information about actors.​
 
@@ -23,28 +38,18 @@ We created this app so that movie lovers could check out which films are trendin
 - What problem does it solve?
 
 ## User Story 
-We used the following User Story to define the goals and requirements of this project: 
+#We used the following User Story to define the goals and requirements of this project: 
 
-AS A movie fanatic​
+* AS A movie fanatic​
 
-I WANT to be able to see which films are trending right now, search for movies by title, watch the trailer, see how many stars it has, read the movie summary, check out who the main actors are, find out information about actors, and add movies to a watchlist.​
+* I WANT to be able to see which films are trending right now, search for movies by title, watch the trailer, see how many stars it has, read the movie summary, check out who the main actors are, find out information about actors, and add movies to a watchlist.​
 
-SO THAT I can organize my movie watching
+* SO THAT I can organize my movie watching
 
 ## Learning Journey
 
 This project gave us the opportunity to learn about collaborating on code, how to utilise server-side API'S, how to implement modals and improved our HTML, CSS and JavaScript Skills. 
 
-## Table of Contents
-
-- [Usage](#usage)
-- [Credits](#credits)
-- [Resources](#resoures)
-- [Links](#links)
-- [License](#license)
-
-## Installation
-N/A
 
 ## Usage
 
@@ -63,23 +68,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 ![alt text](assets/video.webm)
-
-
-## Credits
-
-Kyle, Jess and Sarah 
-
-MAYBE MENTION TIKTO AND NIRAV? 
-
-ADD API'S 
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Features
 
@@ -100,10 +88,17 @@ If you followed tutorials, include links to those here as well.
 * The Actor Searchbar allows users to search for actors by entering their name.
 * The returned actors cards feature actor name, actor headshot image, actor infomration and biography, and images of movies they're known for. 
 
+## Testing
 
-## Tests
+We just tested manually really , not sure if that counts.
 
-We just tested manually really , not sure if that counts. 
+## Future Development
+
+* Integrate"genre" category into search feature
+* Merge search bar for Movie Title and Actor into one
+* Be able to categorise movies within the watchlist (date night, Christmas time etc)
+* Add a remove from watchlist button in the watchlist cards
+* Machine learning – Use predictive modellingto predict movies that the user would like
 
 ## Resources
 
@@ -132,6 +127,12 @@ Nicoding Presentation: ![Presentation](assets/Presentation page 1.jpg)
 GitHub link: [Nicoding](https://github.com/KyloGG88/NicodingProject1)
 
 GitPages link: [Nicoding](https://kylogg88.github.io/NicodingProject1/)
+
+## Credits
+
+* Jess [Github Profile](https://github.com/jessi994)
+* Sarah [Github Profile](https://github.com/shemlock)
+* Kyle [Github Profile](https://github.com/KyloGG88)
 
 ## License
 
