@@ -282,9 +282,17 @@ main {
     -webkit-background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 350px;
+    width: 400px;
     height: 350px;
     position: relative;
+}
+
+.modal-header{
+    background: black;
+}
+
+.modal-body{
+    background:black;
 }
 
 .movie-overview {
