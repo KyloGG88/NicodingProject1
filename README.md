@@ -127,9 +127,11 @@ We just tested manually really , not sure if that counts.
 
 ## Links
 
-![Presentation](assets/images/Mockup.jpg)
-![Github Repo](https://github.com/KyloGG88/NicodingProject1)
-![Github Pages](https://kylogg88.github.io/NicodingProject1/)
+Nicoding Presentation: ![Presentation](assets/Presentation page 1.jpg)
+
+GitHub link: [Nicoding](https://github.com/KyloGG88/NicodingProject1)
+
+GitPages link: [Nicoding](https://kylogg88.github.io/NicodingProject1/)
 
 ## License
 
