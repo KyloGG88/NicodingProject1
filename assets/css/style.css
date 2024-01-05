@@ -295,6 +295,11 @@ main {
     background:black;
 }
 
+.modal h3{
+    color:white;
+}
+
+
 .movie-overview {
     color: var(--primary-color);
     padding: 10px;
@@ -350,6 +355,7 @@ main {
 .actor-info h5 {
     flex: 0 0 30%;
     text-align: center;
+    color:white;
 }
 
 .actor-info img {
@@ -385,9 +391,13 @@ main {
 }
 
 .modal .movie-overview {
-    color: black;
+    color: white;
     position: relative;
    
+}
+
+.btn-close{
+    background-color:white;
 }
 
 /* Watchlist Content Card Styles */
