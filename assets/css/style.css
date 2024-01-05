@@ -299,6 +299,9 @@ main {
     color:white;
 }
 
+.Modal-title{
+    color: white;
+}
 
 .movie-overview {
     color: var(--primary-color);
