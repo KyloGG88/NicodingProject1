@@ -171,10 +171,7 @@ function showMovies(data) {
                 </div>
 
                 
-                <div class="trailer">
-                <h2>Trailer</h2>
-                <iframe width="300" height="300" data-movie-id="${id}" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                
                 
 
 
@@ -196,6 +193,10 @@ function showMovies(data) {
                 <h5>${actors[0].name}</h5>
                 <h5>${actors[1] ? actors[1].name : 'N/A'}</h5>
                 <h5>${actors[2].name}</h5>
+                <div class="trailer">
+                <h3 class="trailorheading">Watch trailer</h3>
+                <iframe width="400" height="300" data-movie-id="${id}" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 </div>
                 </div>
                 
