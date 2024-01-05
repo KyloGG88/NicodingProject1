@@ -184,6 +184,7 @@ function showMovies(data) {
                          "${overview}"
                 </div>
                 <div class = "actor-info" id = "actor-info">
+                <h3>Main Actors<h3>
                 <img src="${photos_URL + actors[0].profilePath}"
                 alt="${actors[0].name}">
                 <img src="${IMG_URL + actors[1].profilePath}"
