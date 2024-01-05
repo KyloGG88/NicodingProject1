@@ -40,6 +40,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 - [Usage](#usage)
 - [Credits](#credits)
 - [Resources](#resoures)
+- [Links](#links)
 - [License](#license)
 
 ## Installation
@@ -123,6 +124,12 @@ We just tested manually really , not sure if that counts.
 *     https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 *     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 *     https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css
+
+## Links
+
+![Presentation](assets/images/Mockup.jpg)
+![Github Repo](https://github.com/KyloGG88/NicodingProject1)
+![Github Pages](https://kylogg88.github.io/NicodingProject1/)
 
 ## License
 
