@@ -1,39 +1,58 @@
 # NicodingProject1
 Group 6 - Nicoding - Project 1
-
-# User Walkthrough Video
-
-[video.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/ac755512-3223-4fff-a2e2-5eb33065283a)
-
-
-# Film Suggestion Website
-
-![](assets/images/Mockup.jpg)
+The link to the deployed application is here: https://kylogg88.github.io/NicodingProject1/
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+![](assets/images/Mockup.jpg) ADD A DIFFERENT IMAGE
 
-- What was your motivation?
+MovieTracker is an app that allows users to organise their movie watching.  ADD MORE TO THIS? 
+
+MOTIVATION: 
+The motivation for our project was a combination of passion and real-world problem. 
+
+Passion: We love watching movies.
+
+​Problem: We struggled to organise our movie watching. 
+
+We wanted to create an app that would make movie nights easy peasy and answer the age-old question "What have I seen that actor in before?"
+
+We created this app so that movie lovers could check out which films are trending at the moment, search for movies by title, add movies to a watchlist, see how many stars it has, read the movie summary, watch the trailer, check out who the main actors are, and find out information about actors.​
+
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
-- What did you learn?
 
-## Table of Contents (Optional)
+## User Story 
+We used the following User Story to define the goals and requirements of this project: 
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+AS A movie fanatic​
 
-- [Installation](#installation)
+I WANT to be able to see which films are trending right now, search for movies by title, watch the trailer, see how many stars it has, read the movie summary, check out who the main actors are, find out information about actors, and add movies to a watchlist.​
+
+SO THAT I can organize my movie watching
+
+## Learning Journey
+
+This project gave us the opportunity to learn about collaborating on code, how to utilise server-side API'S, how to implement modals and improved our HTML, CSS and JavaScript Skills. 
+
+## Table of Contents
+
 - [Usage](#usage)
 - [Credits](#credits)
 - [Resources](#resoures)
 - [License](#license)
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A
 
 ## Usage
+
+# User Walkthrough Video
+
+[video.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/ac755512-3223-4fff-a2e2-5eb33065283a)
+
+![](assets/images/Mockup.jpg)
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -47,6 +66,12 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
+Kyle, Jess and Sarah 
+
+MAYBE MENTION TIKTO AND NIRAV? 
+
+ADD API'S 
+
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
@@ -55,23 +80,29 @@ If you followed tutorials, include links to those here as well.
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
 
-If your project has a lot of features, list them here.
+***Our Website Features***
 
-## How to Contribute
+* Mobile Responsive.
+* Clean and Polished UI.
+* Intuitive and Easy to Navigate UX.
+* A Header/Navigation Bar with Search Bar for Movies, Search Bar for Actors, Logo and Watchlist Button.
+* Logo returns user to hompage.
+* Homepage features movies that are trending right now.
+* Cards on the homepage feature movie title, image, color-coded star rating and add to watchlist button.
+* When users click on the movie image they will see a modal showing movie overview, main actors and a trailer video.
+* Users can press the x to exit out of the modal.
+* Users can view movies they've added to the watchlist by clicking the watchlist button on the right hand side of the header/navigation bar.
+* Watchlist Movies are saved to local storage and movie cards in the watchlist feature the movie title, image, star rating and overview. 
+* The Movie Searchbar allows users to search for movies by entering a word(s). The returned movie cards have the same features as the homepage cards.
+* The Actor Searchbar allows users to search for actors by entering their name.
+* The returned actors cards feature actor name, actor headshot image, actor infomration and biography, and images of movies they're known for. 
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+We just tested manually really , not sure if that counts. 
 
 ## Resources
 
@@ -91,6 +122,7 @@ Go the extra mile and write tests for your application. Then provide examples on
 *     https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 *     https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 *     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*     https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css
 
 ## License
 
