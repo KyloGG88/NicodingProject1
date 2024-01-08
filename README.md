@@ -53,12 +53,12 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 [moviewebsite.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/d7d0277b-4244-49c5-8295-1b3c6da67323)
 
-* The header of the website features two search bars, a logo and a wishlist button. 
+* The header of the website features two search bars, a logo and a watchlist button. 
 * Use the movies search bar to search for movies. 
 * Use the actors search bar to search for actors. 
 * The logo increases in size you mouse over it. Click on it to return to the homepage. 
-* The wishlist button takes you to movies that you've added to your wishlist. 
-* The wishlist button also features a counter to show how many movies you currently have in your watchlist. 
+* The watchlist button takes you to movies that you've added to your watchlist. 
+* The watchlist button also features a counter to show how many movies you currently have in your watchlist. 
 * The homepage features the top 20 movies that are currently trending. 
 * Clicking on a movie poster image reveals a modal displaying further information about the movie including overview, main actors and trailer. 
 
@@ -98,7 +98,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 # Your Watchlist
 
-!alt text[](assets/images/watchlist.png)
+![alt text](assets/images/watchlist.png)
 
 
 * Click the 'Watchlist' button on the right hand side of the header to see your watchlist. 
@@ -114,7 +114,7 @@ The Movie Tracker website is mobile responisve. The four images images below ill
 
 ![alt text](assets/images/mobileview-actors.png)
 
-![alt text](assets/images/mobileview-wishlist.png)
+![alt text](assets/images/mobileview-watchlist.png)
 
 
 ## Features
