@@ -59,7 +59,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 Add more here and explain modals 
 
-![alt text](assets/images/homepage,png)
+![alt text](assets/images/homepage.png)
 
 homepage
 
