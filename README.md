@@ -59,29 +59,29 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 Add more here and explain modals 
 
-![](assets/images/homepage,png)
+![alt text](assets/images/homepage,png)
 
 homepage
 
-![](assets/images/movies.png)
+![alt text](assets/images/movies.png)
 
 movie search
 
-![](assets/images/actors.png)
+![alt text](assets/images/actors.png)
 
 actor search
 
-![](assets/images/wishlist.png)
+!alt text[](assets/images/wishlist.png)
 
 mobile responisvenesss
 
-![](assets/images/mobileview-homepage.png)
+![alt text](assets/images/mobileview-homepage.png)
 
-![](assets/images/mobileview-movies.png)
+![alt text](assets/images/mobileview-movies.png)
 
-![](assets/images/mobileview-actors.png)
+![alt text](assets/images/mobileview-actors.png)
 
-![](assets/images/mobileview-wishlist.png)
+![alt text](assets/images/mobileview-wishlist.png)
 
 Provide instructions and examples for use. Include screenshots as needed.
 
