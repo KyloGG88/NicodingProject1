@@ -70,7 +70,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 * Each card displays the movie title, movie poster, a color coded star rating and an add to watchlist button (the eye icon). 
 * Star Rating: 1 Star = Red, 2 or 3 Star = Orange, 4 or 5 Star = Green. 
 * Clicking the eye icon adds the movie to your watchlist. 
-* If a movie is in your wathclist the eye icon changes from white to gold. 
+* If a movie is in your wathclist the eye icon changes from white to gold (As seen for 'The Hunger Games' card in the image above). 
 * Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
 * To exit from the modal, press the X button in the top right hand corner.
 
@@ -98,7 +98,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 # Your Watchlist
 
-!alt text[](assets/images/wishlist.png)
+!alt text[](assets/images/watchlist.png)
 
 
 * Click the 'Watchlist' button on the right hand side of the header to see your watchlist. 
