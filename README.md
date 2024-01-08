@@ -57,9 +57,31 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 [moviewebsite.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/d7d0277b-4244-49c5-8295-1b3c6da67323)
 
+Add more here and explain modals 
 
-![](assets/images/Mockup.jpg)
+![](assets/images/homepage,png)
 
+homepage
+
+![](assets/images/movies.png)
+
+movie search
+
+![](assets/images/actors.png)
+
+actor search
+
+![](assets/images/wishlist.png)
+
+mobile responisvenesss
+
+![](assets/images/mobileview-homepage.png)
+
+![](assets/images/mobileview-movies.png)
+
+![](assets/images/mobileview-actors.png)
+
+![](assets/images/mobileview-wishlist.png)
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -91,7 +113,12 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Testing
 
-We just tested manually really , not sure if that counts.
+We manually tested this app, ensuring that: 
+*search results were correct for movie search bar 
+*search results were correct for actor search bar 
+*films were being added to and removed from watchlist 
+*modals were working correctly for movie cards 
+*mobile responsivess was working correctly
 
 ## Future Development
 
@@ -134,6 +161,8 @@ GitPages link: [Nicoding](https://kylogg88.github.io/NicodingProject1/)
 * Jess [Github Profile](https://github.com/jessi994)
 * Sarah [Github Profile](https://github.com/shemlock)
 * Kyle [Github Profile](https://github.com/KyloGG88)
+
+* We'd also like to thank TA's Nirav and Tikto for their help and guidance with this project. 
 
 ## License
 
