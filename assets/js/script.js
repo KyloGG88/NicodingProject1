@@ -253,7 +253,7 @@ function showMovies(data) {
 }
 
 function get_video(searchTerm, id) {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchTerm}&key=AIzaSyD__P9ztiZG7ptJ0wMriENLZy7bF_CZAi0`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchTerm}&key=AIzaSyD5JfpCN0vD5qL6dgdaw1IAJvcz45NTg1s`;
 
     fetch(url)
         .then(response => response.json())
