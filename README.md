@@ -35,7 +35,7 @@ The motivation for our project was a combination of passion and real-world probl
 We created this app so that movie lovers could check out which films are trending at the moment, search for movies by title, add movies to a watchlist, see how many stars it has, read the movie summary, watch the trailer, check out who the main actors are, and find out information about actors.​
 
 ## User Story 
-#We used the following User Story to define the goals and requirements of this project: 
+We used the following User Story to define the goals and requirements of this project: 
 
 * AS A movie fanatic​
 
@@ -78,15 +78,18 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 ![alt text](assets/images/movies.png)
 
+
 * Type a word(s) into the movies search bar (where it says 'Search by movie...) to search for movies. 
 * Movies with that word(s) in their title will be returned.
 * Just like the movie cards from the currently trending section, these cards show movie title, movie poster, a color coded star rating and an add to watchlist button. 
 * Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
 * To exit from the modal, press the X button in the top right hand corner. 
 
-![alt text](assets/images/actors.png)
 
 # Searching for Actors
+
+![alt text](assets/images/actors.png)
+
 
 * Type a first name or a full name into the actors search bar (where it says 'Search by actor...) to search for actors. 
 * Actors with that name will be returned. 
@@ -97,12 +100,13 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 !alt text[](assets/images/wishlist.png)
 
+
 * Click the 'Watchlist' button on the right hand side of the header to see your watchlist. 
 * Movie cards for movies that you've added to your watchlist, show the movie poster image, movie title, the movie star rating and the movie overview.
 * Click the Movie Tracker logo to return to the Homepage.
 
 # Mobile Responisvenesss
-* The Movie Tracker website is mobile responisve. The images images below illustrate the changes to UI on smaller screens. 
+The Movie Tracker website is mobile responisve. The four images images below illustrate the changes to UI that will appear on smaller screens. 
 
 ![alt text](assets/images/mobileview-homepage.png)
 
