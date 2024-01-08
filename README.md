@@ -139,11 +139,11 @@ The Movie Tracker website is mobile responisve. The four images images below ill
 ## Testing
 
 We manually tested this app, ensuring that: 
-*search results were correct for movie search bar 
-*search results were correct for actor search bar 
-*films were being added to and removed from watchlist 
-*modals were working correctly for movie cards 
-*mobile responsivess was working correctly
+* search results were correct for movie search bar 
+* search results were correct for actor search bar 
+* films were being added to and removed from watchlist 
+* modals were working correctly for movie cards 
+* mobile responsivess was working correctly
 
 ## Future Development
 
