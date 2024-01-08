@@ -55,7 +55,7 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 # User Walkthrough Video
 
-[video.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/ac755512-3223-4fff-a2e2-5eb33065283a)
+[website.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/ac755512-3223-4fff-a2e2-5eb33065283a)
 
 ![](assets/images/Mockup.jpg)
 
