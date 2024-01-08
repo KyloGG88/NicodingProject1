@@ -53,56 +53,56 @@ This project gave us the opportunity to learn about collaborating on code, how t
 
 [moviewebsite.webm](https://github.com/KyloGG88/NicodingProject1/assets/147415364/d7d0277b-4244-49c5-8295-1b3c6da67323)
 
-*The header of the website features two search bars, a logo and a wishlist button. 
-*Use the movies search bar to search for movies. 
-*Use the actors search bar to search for actors. 
-*The logo increases in size you mouse over it. Click on it to return to the homepage. 
-*The wishlist button takes you to movies that you've added to your wishlist. 
-*The wishlist button also features a counter to show how many movies you currently have in your watchlist. 
-*The homepage features the top 20 movies that are currently trending. 
-*Clicking on a movie poster image reveals a modal displaying further information about the movie including overview, main actors and trailer. 
+* The header of the website features two search bars, a logo and a wishlist button. 
+* Use the movies search bar to search for movies. 
+* Use the actors search bar to search for actors. 
+* The logo increases in size you mouse over it. Click on it to return to the homepage. 
+* The wishlist button takes you to movies that you've added to your wishlist. 
+* The wishlist button also features a counter to show how many movies you currently have in your watchlist. 
+* The homepage features the top 20 movies that are currently trending. 
+* Clicking on a movie poster image reveals a modal displaying further information about the movie including overview, main actors and trailer. 
 
 # The Homepage 
 
 ![alt text](assets/images/homepage.png)
 
-*The homepage features movie cards for movies that are currently trending. 
-*Each card displays the movie title, movie poster, a color coded star rating and an add to watchlist button (the eye icon). 
-*Star Rating: 1 Star = Red, 2 or 3 Star = Orange, 4 or 5 Star = Green. 
-*Clicking the eye icon adds the movie to your watchlist. 
-*If a movie is in your wathclist the eye icon changes from white to gold. 
-*Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
-*To exit from the modal, press the X button in the top right hand corner.
+* The homepage features movie cards for movies that are currently trending. 
+* Each card displays the movie title, movie poster, a color coded star rating and an add to watchlist button (the eye icon). 
+* Star Rating: 1 Star = Red, 2 or 3 Star = Orange, 4 or 5 Star = Green. 
+* Clicking the eye icon adds the movie to your watchlist. 
+* If a movie is in your wathclist the eye icon changes from white to gold. 
+* Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
+* To exit from the modal, press the X button in the top right hand corner.
 
 # Searching for Movies
 
 ![alt text](assets/images/movies.png)
 
-*Type a word(s) into the movies search bar (where it says 'Search by movie...) to search for movies. 
-*Movies with that word(s) in their title will be returned.
-*Just like the movie cards from the currently trending section, these cards show movie title, movie poster, a color coded star rating and an add to watchlist button. 
-*Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
-*To exit from the modal, press the X button in the top right hand corner. 
+* Type a word(s) into the movies search bar (where it says 'Search by movie...) to search for movies. 
+* Movies with that word(s) in their title will be returned.
+* Just like the movie cards from the currently trending section, these cards show movie title, movie poster, a color coded star rating and an add to watchlist button. 
+* Additionally, when you click on a movie poster image a modal will appear displaying the movie overview, the main actors and the movie trailer. 
+* To exit from the modal, press the X button in the top right hand corner. 
 
 ![alt text](assets/images/actors.png)
 
 # Searching for Actors
 
-*Type a first name or a full name into the actors search bar (where it says 'Search by actor...) to search for actors. 
-*Actors with that name will be returned. 
-*In addition to the actors name, you will also see their headshot, some information about their acting work and movie poster images of their three most popular movies. 
-*Click the Movie Tracker Homepage to return to the Homepage. 
+* Type a first name or a full name into the actors search bar (where it says 'Search by actor...) to search for actors. 
+* Actors with that name will be returned. 
+* In addition to the actors name, you will also see their headshot, some information about their acting work and movie poster images of their three most popular movies. 
+* Click the Movie Tracker Homepage to return to the Homepage. 
 
 # Your Watchlist
 
 !alt text[](assets/images/wishlist.png)
 
-*Click the 'Watchlist' button on the right hand side of the header to see your watchlist. 
-*Movie cards for movies that you've added to your watchlist, show the movie poster image, movie title, the movie star rating and the movie overview.
-*Click the Movie Tracker logo to return to the Homepage.
+* Click the 'Watchlist' button on the right hand side of the header to see your watchlist. 
+* Movie cards for movies that you've added to your watchlist, show the movie poster image, movie title, the movie star rating and the movie overview.
+* Click the Movie Tracker logo to return to the Homepage.
 
 # Mobile Responisvenesss
-*The Movie Tracker website is mobile responisve. The images images below illustrate the changes to UI on smaller screens. 
+* The Movie Tracker website is mobile responisve. The images images below illustrate the changes to UI on smaller screens. 
 
 ![alt text](assets/images/mobileview-homepage.png)
 
