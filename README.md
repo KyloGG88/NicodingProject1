@@ -175,7 +175,7 @@ We manually tested this app, ensuring that:
 
 ## Links
 
-Nicoding Presentation: ![Presentation](assets/Presentation page 1.jpg)
+Nicoding Presentation: [Presentation](https://github.com/KyloGG88/NicodingProject1/blob/main/assets/Nicoding%20Project%201%20presentation.pdf)
 
 GitHub link: [Nicoding](https://github.com/KyloGG88/NicodingProject1)
 
